@@ -39,6 +39,14 @@ public class SysAdminPermissions extends AbstractPermissions {
         put(Resource.USER, userPermissionChecker);
         put(Resource.WIDGETS_BUNDLE, systemEntityPermissionChecker);
         put(Resource.WIDGET_TYPE, systemEntityPermissionChecker);
+        put(Resource.ALARM, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.ASSET, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.DEVICE, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.CUSTOMER, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.DASHBOARD, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.ENTITY_VIEW, PermissionChecker.allowAllPermissionChecker);
+        put(Resource.RULE_CHAIN, PermissionChecker.allowAllPermissionChecker);
+
     }
 
     private static final PermissionChecker systemEntityPermissionChecker = new PermissionChecker() {
@@ -66,3 +74,4 @@ public class SysAdminPermissions extends AbstractPermissions {
     };
 
 }
+
